@@ -1,6 +1,6 @@
 # Yeoman Foot Guard Generator
 
-  Generator to use Yeoman on a Wordpress project.
+  Generator to use Yeoman on a Backbone project.
 
   For more informations about Yeoman, see [Yeoman.io](http://yeoman.io/)
 
