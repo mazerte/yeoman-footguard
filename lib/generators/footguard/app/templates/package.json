@@ -1,0 +1,10 @@
+{
+	"author": "",
+	"name": "MyProject",
+	"version": "0.0.0",
+	"dependencies": {
+		"grunt-recess":  "~0.1.1",
+		"grunt-coffeelint":  "~0.0.3"
+	},
+	"devDependencies": {}
+}

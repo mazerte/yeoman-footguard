@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "Mathieu Desvé"
+  },
+  "name": "yeoman-footguard",
+  "description": "Template generator for Yeoman. Include Backbone, RequireJS, CoffeeScript, Compass and Mocha by Testem",
+  "keywords": [
+    "front-end",
+    "development",
+    "sass",
+    "coffeescript",
+    "backbone",
+    "testem",
+    "requirejs",
+    "mocha",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazerte/yeoman-footguard.git"
+  },
+  "version": "0.1.0",
+  "dependencies": {
+    "yeoman": "*",
+    "package-parser": "0.0.1",
+    "underscore.inflections": "~0.1.3",
+    "grunt": "http://nodeload.github.com/gruntjs/grunt/tarball/0ba6d4b529"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
