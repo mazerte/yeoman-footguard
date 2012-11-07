@@ -24,7 +24,7 @@
     "yeoman": "*",
     "package-parser": "0.0.1",
     "underscore.inflections": "~0.1.3",
-    "grunt": "http://nodeload.github.com/gruntjs/grunt/tarball/0ba6d4b529"
+    "grunt": "http://github.com/cowboy/grunt/archive/0ba6d4b529.tar.gz"
   },
   "devDependencies": {},
   "optionalDependencies": {},
