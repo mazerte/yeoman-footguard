@@ -29,7 +29,7 @@ requirejs.config
 		'underscore': '../components/underscore/underscore'
 		'backbone': 	'../components/backbone/backbone'
 		'jquery': 		'../components/jquery/jquery'
-		'text' : 			'../components/text/text'
+		'text' : 			'../components/requirejs-text/text'
 		'domReady': 	'../components/domReady/domReady'
 		'modernizr': 	'../components/modernizr/modernizr'
 		'templates': '../templates'
