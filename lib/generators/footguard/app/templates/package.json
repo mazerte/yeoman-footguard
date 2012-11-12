@@ -4,7 +4,11 @@
 	"version": "0.0.0",
 	"dependencies": {
 		"grunt-recess":  "~0.1.1",
-		"grunt-coffeelint":  "~0.0.3"
+		"grunt-coffeelint":  "~0.0.3",
+		"shelljs":  "~0.0.8",
+		"underscore": "~1.4.2",
+		"yeoman-footguard": "git://github.com/mazerte/yeoman-footguard.git"
 	},
 	"devDependencies": {}
 }
+	
