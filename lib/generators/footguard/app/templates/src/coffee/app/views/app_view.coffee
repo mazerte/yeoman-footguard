@@ -2,9 +2,7 @@ define [
 	'backbone'
 	'underscore'
 	'text!templates/app.html'
-	
-	'app/views/menu_view'
-], (Bacbone, _, tpl, MenuView)->
+], (Bacbone, _, tpl)->
 
 	class App extends Backbone.View
 		
