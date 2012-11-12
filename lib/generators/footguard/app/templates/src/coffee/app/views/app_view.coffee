@@ -6,7 +6,7 @@ define [
 
 	class App extends Backbone.View
 		
-		el: "body"
+		el: "#total"
 		
 		events: {}
 		
