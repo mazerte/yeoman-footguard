@@ -1,6 +1,7 @@
 define [
 	'backbone'
-], (Backbone)->
+	'app/views/app_view'
+], (Backbone, appView)->
 
 	class Router extends Backbone.Router
 
@@ -8,6 +9,7 @@ define [
 			'*actions' : 'defaultAction'
 
 		initialize: ()->
+			appView.render()
 			Backbone.history.start()
 
 		defaultAction: (actions)->
