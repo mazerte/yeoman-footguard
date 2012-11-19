@@ -1,0 +1,240 @@
+body {
+	margin-bottom: 100px;
+}
+
+#mocha {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	background-color: white;
+}
+
+#mocha #stats {
+	height: 60px;
+	margin: 0;
+	border-top: 1px solid #AAAAAA;
+	
+	background: #dddddd; /* Old browsers */
+	background: -moz-linear-gradient(top, #dddddd 0%, #FFFFFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #dddddd 0%,#FFFFFF 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #dddddd 0%,#FFFFFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #dddddd 0%,#FFFFFF 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #dddddd 0%,#FFFFFF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-9 */
+}
+
+#mocha ul#stats {
+	padding-left: 15px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+#mocha #stats li {
+	float: left;
+	height: 30px;
+	margin: 10px;
+	list-style: none;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+#mocha #stats li em {
+	font-weight: normal;
+}
+
+#mocha #stats li.passes a {
+	color: green;
+}
+
+#mocha #stats li.failures a {
+	color: red;
+}
+
+#mocha #stats li.progress {
+	float: right;
+	height: 40px;
+}
+
+#mocha #report {
+	display: none;
+}
+
+.open-mocha #mocha {
+	position: absolute;
+	top: 0;
+}
+
+.open-mocha #total {
+	display: none;
+}
+
+.open-mocha #mocha #report {
+	display: block;
+  font: 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 60px 50px;
+}
+
+#mocha h1, #mocha h2 {
+  margin: 0;
+}
+
+#mocha h1 {
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#mocha h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mocha h1 a:hover {
+  text-decoration: underline;
+}
+
+#mocha .suite .suite h1 {
+  margin-top: 0;
+  font-size: .8em;
+}
+
+.hidden {
+  display: none;
+}
+
+#mocha h2 {
+  font-size: 12px;
+  font-weight: normal;
+  cursor: pointer;
+	line-height: inherit;
+}
+
+#mocha .suite {
+  margin-left: 0px;
+}
+
+#mocha ul {
+  list-style: none;
+}
+
+#mocha .test {
+  margin-left: 0px;
+}
+
+#mocha .test:hover h2::after {
+  position: relative;
+  top: 0;
+  right: -10px;
+  content: '(view source)';
+  font-size: 12px;
+  font-family: arial;
+  color: #888;
+}
+
+#mocha .test.pending:hover h2::after {
+  content: '(pending)';
+  font-family: arial;
+}
+
+#mocha .test.pass.medium .duration {
+  background: #C09853;
+}
+
+#mocha .test.pass.slow .duration {
+  background: #B94A48;
+}
+
+#mocha .test.pass::before {
+  content: '✓';
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #00d6b2;
+}
+
+#mocha .test.pass .duration {
+  font-size: 9px;
+  margin-left: 5px;
+  padding: 2px 5px;
+  color: white;
+  background-color: #FF9393;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#mocha .test.pass.fast .duration {
+  display: inline;
+}
+
+#mocha .test.pending {
+  color: #0b97c4;
+}
+
+#mocha .test.pending::before {
+  content: '◦';
+  color: #0b97c4;
+}
+
+#mocha .test.fail {
+  color: #c00;
+}
+
+#mocha .test.fail pre {
+  color: black;
+}
+
+#mocha .test.fail::before {
+  content: '✖';
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  color: #c00;
+}
+
+#mocha .test pre.error {
+  color: #c00;
+}
+
+#mocha .test pre {
+  display: inline-block;
+  font: 12px/1.5 monaco, monospace;
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-bottom-color: #ddd;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px #eee;
+}
+
+#mocha #report.pass .test.fail {
+  display: none;
+}
+
+#mocha #report.fail .test.pass {
+  display: none;
+}
+
+#mocha #error {
+  color: #c00;
+  font-size: 1.5  em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+#mocha code .comment { color: #ddd }
+#mocha code .init { color: #2F6FAD }
+#mocha code .string { color: #5890AD }
+#mocha code .keyword { color: #8A6343 }
+#mocha code .number { color: #2F6FAD }

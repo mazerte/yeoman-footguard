@@ -1,9 +1,15 @@
 define [
-	"spec/app_spec"
-	"spec/router_spec"
-	"spec/config/config_base_spec"
+	"spec/unit/app_spec"
+	"spec/unit/router_spec"
+	"spec/unit/config/config_base_spec"
 
-	"spec/helpers/modernizr_test_spec"
-	"spec/helpers/underscore_mixin_spec"
-	# <here> don't remove this comment
+	"spec/unit/helpers/modernizr_test_spec"
+	"spec/unit/helpers/underscore_mixin_spec"
+	
+	# <unit> don't remove this comment
+	
+	"spec/functional/mocha_spec"
+	# <functional> don't remove this comment
+	
+	# <integration> don't remove this comment
 ], ()->
