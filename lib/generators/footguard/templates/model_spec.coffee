@@ -1,4 +1,4 @@
-define ['app/models/<%= name %>_model'], (<%= grunt.util._.classify(name) %>)->
+define ['app/models/<% if( folder ) { print(folder +"/"); } %><%= name %>_model'], (<%= grunt.util._.classify(name) %>)->
 
 	describe 'Test <%= grunt.util._.classify(name) %> Model', ()->
 

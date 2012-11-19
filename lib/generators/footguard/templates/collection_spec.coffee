@@ -1,4 +1,4 @@
-define ['app/collections/<%= name %>_collection'], (<%= grunt.util._.classify(name) %>)->
+define ['app/collections/<% if( folder ) { print(folder +"/"); } %><%= name %>_collection'], (<%= grunt.util._.classify(name) %>)->
 
 	describe 'Test <%= grunt.util._.classify(name) %> Collection', ()->
 

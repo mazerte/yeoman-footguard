@@ -1,8 +1,8 @@
 define [
 	'backbone'
 	'underscore'<% if( tpl ) { %>
-	'text!templates/<%= tpl %>.html'<% } %><% if( model ) { %>
-	'app/models/<%= model %>_model'<% } %>
+	'text!templates/<% if( folder ) { print(folder +"/"); } %><%= tpl %>.html'<% } %><% if( model ) { %>
+	'app/models/<% if( folder ) { print(folder +"/"); } %><%= model %>_model'<% } %>
 ], (Bacbone, _<% if( tpl ) { print(', tpl'); } %><% if( model ) { print(', ' + grunt.util._.classify(model)); } %>)->
 
 	class <%= grunt.util._.classify(name) %> extends Backbone.View

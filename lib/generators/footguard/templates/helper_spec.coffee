@@ -1,4 +1,4 @@
-define ['app/helpers/<%= name %>_helper'], (<%= grunt.util._.classify(name) %>)->
+define ['app/helpers/<% if( folder ) { print(folder +"/"); } %><%= name %>_helper'], (<%= grunt.util._.classify(name) %>)->
 
 	describe 'Test <%= grunt.util._.classify(name) %> Helper', ()->
 

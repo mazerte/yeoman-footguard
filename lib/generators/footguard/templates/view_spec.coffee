@@ -1,4 +1,4 @@
-define ['app/views/<%= name %>_view'], (<%= grunt.util._.classify(name) %>)->
+define ['app/views/<% if( folder ) { print(folder +"/"); } %><%= name %>_view'], (<%= grunt.util._.classify(name) %>)->
 
 	describe 'Test <%= grunt.util._.classify(name) %> View', ()->
 
