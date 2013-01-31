@@ -7,6 +7,7 @@
 		"grunt-coffeelint":  "~0.0.3",
 		"shelljs":  "~0.0.8",
 		"underscore": "~1.4.2",
+		"requirejs": "~2.0.6",
 		"yeoman-footguard": "git://github.com/mazerte/yeoman-footguard.git"
 	},
 	"devDependencies": {}
