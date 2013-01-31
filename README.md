@@ -6,7 +6,7 @@
 
 ## Installation (for Yeoman >= 0.9.3)
 
-  TODOS
+  `$ npm install yeoman-footguard`
 
 #### Uninstalling
 
