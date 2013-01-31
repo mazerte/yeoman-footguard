@@ -5,7 +5,7 @@ define [
 	'app/models/<% if( folder ) { print(folder +"/"); } %><%= model %>_model'<% } %>
 ], (Bacbone, _<% if( tpl ) { print(', tpl'); } %><% if( model ) { print(', ' + grunt.util._.classify(model)); } %>)->
 
-	class <%= grunt.util._.classify(name) %> extends Backbone.View
+	class <%= grunt.util._.classify(name) %>View extends Backbone.View
 		
 		events: {}
 		<% if( model ) { %>
